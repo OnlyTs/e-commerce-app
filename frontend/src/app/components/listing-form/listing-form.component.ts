@@ -12,8 +12,6 @@ export class ListingFormComponent implements OnInit{
   @Input() currentName = '';
   @Input() currentDescription = '';
   @Input() currentPrice!: number;
-  @Input() currentUserId!: string;
-  @Input() currentViews!: number;
   @Input() buttonText: string = '';
   @Output() onSubmit = new EventEmitter<Listing>();
 
@@ -38,8 +36,6 @@ export class ListingFormComponent implements OnInit{
       name: this.name,
       description: this.description,
       price: this.price,
-      userId: this.userId,
-      views: this.views
     });
   }
 

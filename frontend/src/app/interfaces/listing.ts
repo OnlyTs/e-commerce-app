@@ -3,6 +3,6 @@ export interface Listing {
     name: string;
     description: string;
     price: number;
-    userId: string;
-    views: number;
+    // userId: string;
+    // views: number;
 }
