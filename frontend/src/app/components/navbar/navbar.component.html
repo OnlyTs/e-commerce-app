@@ -1,0 +1,10 @@
+<mat-toolbar color="primary" class="custom-toolbar">
+  <div class="left-content">
+    <span>BUY AND SELL STUFF</span>
+  </div>
+  <div class="right-content">
+    <button mat-raised-button color="accent" [routerLink]="currentRoute === 'my-listings' ? '/' : '/my-listings'">
+      {{ getButtonText() }}
+    </button>
+  </div>
+</mat-toolbar>

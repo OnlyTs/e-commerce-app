@@ -1,0 +1,23 @@
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack cards vertically */
+  height: 100vh; /* Set container height to 100% of the viewport height */
+}
+
+.listing-card {
+  width: 80%; /* Make the cards longer */
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+
+  /* Add a more pronounced box shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.actions {
+  justify-content: flex-end; /* Align buttons to the right */
+  display: flex;
+  gap: 8px; /* Add spacing between buttons */
+}

@@ -1,0 +1,9 @@
+    <h1>Edit Listing</h1>
+    <h2 *ngIf="listing">
+        <app-listing-form buttonText="update"
+                        [currentName]="listing!.name"
+                        [currentPrice]="listing!.price"
+                        [currentDescription]="listing!.description"
+                        (onSubmit)="onSubmit()">
+        </app-listing-form>
+    </h2>

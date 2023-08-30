@@ -1,0 +1,21 @@
+
+<div class="center-container">
+  <form (ngSubmit)="onSubmitClicked()"> <!--?????????-->
+    <mat-form-field appearance="outline">
+      <mat-label>Enter listing name</mat-label>
+      <input matInput [(ngModel)]="name" name="name">
+    </mat-form-field>
+    <mat-form-field floatLabel="always" appearance="outline">
+        <mat-label>Enter listing price</mat-label>
+        <input matInput type="number" class="example-right-align" placeholder="0" [(ngModel)]="price" name="price">
+        <span matTextPrefix>$&nbsp;</span>
+        <span matTextSuffix>.00</span>
+      </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Enter listing description</mat-label>
+      <textarea matInput [(ngModel)]="description" name="description"></textarea>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">{{buttonText}}</button>
+  </form>
+</div>

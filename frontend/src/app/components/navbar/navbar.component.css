@@ -1,0 +1,19 @@
+.custom-toolbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .my-listings {
+    margin-left: 16px; /* Adjust the margin as needed */
+  }
+  

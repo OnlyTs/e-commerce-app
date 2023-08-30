@@ -1,0 +1,24 @@
+<div class="center-container">
+    <ng-container *ngFor="let listing of listings">
+      <mat-card class="listing-card">
+        <mat-card-header>
+          <mat-card-title>{{ listing.name }}</mat-card-title>
+          <mat-card-subtitle>${{ listing.price }}</mat-card-subtitle>
+        </mat-card-header>
+  
+        <mat-card-actions class="actions">
+          <button mat-raised-button color="primary" 
+                  routerLink="/edit-listing/{{listing.id}}">
+            <mat-icon>edit</mat-icon>
+            Edit
+          </button>
+          <button mat-raised-button color="primary"
+                  (click)="onDelete(listing.id)">
+            <mat-icon>delete_forever</mat-icon>
+            Delete
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </ng-container>
+  </div>
+  

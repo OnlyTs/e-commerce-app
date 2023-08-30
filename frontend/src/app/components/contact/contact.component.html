@@ -1,0 +1,15 @@
+  <div class="center-container">
+    <h1><b>Contact owner</b></h1>
+    <form ngForm (ngSubmit)="sendMessage()"> <!--?????????-->
+      <mat-form-field appearance="outline">
+        <mat-label>Enter your email</mat-label>
+        <input matInput [(ngModel)]="email" name="email">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Send owner a message</mat-label>
+        <textarea matInput [(ngModel)]="message" name="message"></textarea>
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" type="submit" (click)="sendMessage()">Send</button>
+    </form>
+  </div>

@@ -1,0 +1,24 @@
+<div class="centered-container">
+    <div class="button-container">
+      <button mat-raised-button color="primary" 
+              class="action-button left-button"
+              routerLink="/listings">Back</button>
+      <button mat-raised-button color="primary" 
+              class="action-button right-button"
+              routerLink="/contact/{{listing?.id}}"
+              >Contact</button>
+    </div>
+    <mat-expansion-panel class="custom-panel" [(expanded)]="panelOpenState">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{listing?.name}}
+        </mat-panel-title>
+        <mat-panel-description>
+          {{ panelOpenState ? 'Click to hide ' : 'Click to view' }} {{listing?.name}} details
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p><b>Price:</b> ${{listing?.price}}</p>
+      <p><b>Description:</b> {{listing?.description}}</p>
+    </mat-expansion-panel>
+  </div>
+  
